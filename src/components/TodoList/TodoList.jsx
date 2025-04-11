@@ -4,7 +4,7 @@ import { TodoInfo } from '../TodoInfo/TodoInfo';
 export const TodoList = ({ todos, user }) => (
   <section className="TodoList">
     {todos.map(todo => (
-      <TodoInfo todo={todo} user={user} />
+      <TodoInfo key={todo.id} todo={todo} user={user} />
     ))}
   </section>
 );
